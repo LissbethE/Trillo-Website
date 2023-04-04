@@ -1,0 +1,110 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.header {
+  font-size: 1.4rem;
+
+  height: 7rem;
+  border-bottom: var(--line);
+  background-color: var(--color-white);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-smaller) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    /*gap: 1rem;*/
+    height: 11rem;
+  }
+}
+
+.content {
+  display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  flex: 0 0 18%;
+  background-color: var(--color-grey-dark-1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  //flex: 1 ;
+  flex: 1 0 0;
+  background-color: var(--color-white);
+}
+
+////////////////////////////////////////////////////////
+.detail {
+  font-size: 1.4rem;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem; // 3rem
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    flex-direction: column;
+  }
+}
+
+.description {
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  padding: 3rem;
+  background-color: var(--color-white);
+  box-shadow: var(--shador-light);
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 2rem; // 3rem
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    flex: 1;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.user-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book {
+  flex: 0 0 100%;
+  margin-top: 3rem;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 2rem; // 3rem
+  }
+}
